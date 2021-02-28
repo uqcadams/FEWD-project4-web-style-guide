@@ -1,0 +1,21 @@
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+
+.nav {
+    padding-left: 0;
+    flex-basis: 100%;
+    @include flexy(column);
+    &-link {
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px 0;
+      display: block;
+      width: 100%;
+      @include btn-trans;
+      &:hover {
+        @include nav-btn-hover;
+      }
+    }
+  }
+ 

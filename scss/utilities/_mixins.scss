@@ -1,0 +1,31 @@
+// Centres a block element
+@mixin center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Establishes flexbox and direction
+@mixin flexy($direction: null) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+// Flexible button transitions
+@mixin btn-trans {
+    transition: 
+        background-color .2s ease-in-out, 
+        color .2s ease-in-out;
+}
+
+// Variable navigation button styling
+@mixin nav-btn-hover {
+    color: $clr-font-contrast;
+    background-color: $clr-primary;
+}
+
+// Image top margin and max width
+@mixin img-margin-top-max-width {
+    margin-top: 10px;
+    max-width: 100%;
+}
